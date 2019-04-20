@@ -2115,3 +2115,6 @@ Processing by PostsController#index as HTML
   Rendered posts/_post.html.erb (0.1ms)
   Rendered posts/_post.html.erb (0.1ms)
   Rendered posts/index.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 500ms (Views: 481.2ms | ActiveRecord: 0.8ms)
+
+
