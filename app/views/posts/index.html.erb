@@ -12,18 +12,16 @@
         $("#body-" + id).text(data);
       });
     });
-  });
 
-
-
-  $(".js-less").on('click', function() {
-    let id = $(this).data("id");
-    console.log(id);
-    $(this).replaceWith('<button class="js-more" data-id="'+id+'">More...</button>');
-    $.get("/posts/" + id + "/body", function(data) {
-      // rsp = < %= escape_javascript(truncate(data)) % >;
-      // Replace text of body-id div
-      $("#body-" + id).text(data.substring(0, 25)+"...");
-    });
+      $(".js-less").on('click', function() {
+        let id = $(this).data("id");
+        console.log(id);
+        $(this).replaceWith('<button class="js-more" data-id="'+id+'">More...</button>');
+        $.get("/posts/" + id + "/body", function(data) {
+          // rsp = < %= escape_javascript(truncate(data)) % >;
+          // Replace text of body-id div
+          // $("#body-" + id).text(data.substring(0, 25)+"...");
+        });
+      });
   });
 </script>
