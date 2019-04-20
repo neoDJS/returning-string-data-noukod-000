@@ -2159,3 +2159,16 @@ Processing by PostsController#body as */*
 Completed 200 OK in 7ms (Views: 3.0ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/posts" for 161.0.138.222 at 2019-04-20 09:09:00 +0000
+Cannot render console from 161.0.138.222! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/_post.html.erb (0.5ms)
+  Rendered posts/_post.html.erb (0.1ms)
+  Rendered posts/_post.html.erb (0.1ms)
+  Rendered posts/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 161.0.138.222 at 2019-04-20 09:09:00 +0000
