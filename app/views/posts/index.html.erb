@@ -13,7 +13,7 @@
       });
     });
 
-      $(".js-less").on('click', function() {
+      $(".js-less").on('click', '.js-less', function() {
         let id = $(this).data("id");
         console.log(id);
         $(this).replaceWith('<button class="js-more" data-id="'+id+'">More...</button>');
