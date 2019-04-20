@@ -4,7 +4,7 @@
 
 <script type="text/javascript" charset="utf-8">
   $(document).ready(function () {
-    $(".js-more").on('click', '.js-more', function() {
+    $(document.body).on('click', '.js-more', function() {
       let id = $(this).data("id");
       $(this).replaceWith('<button class="js-less" data-id="'+id+'">Less...</button>');
       $.get("/posts/" + id + "/body", function(data) {
