@@ -3,7 +3,7 @@
 <% end %>
 
 <script type="text/javascript" charset="utf-8">
-  $(function () {
+  $(document).ready(function () {
     $(".js-more").on('click', function() {
       let id = $(this).data("id");
       $(this).replaceWith('<button class="js-less" data-id="'+id+'">Less...</button>');
