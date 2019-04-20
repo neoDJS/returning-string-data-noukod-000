@@ -20,7 +20,7 @@
         $.get("/posts/" + id + "/body", function(data) {
           // rsp = < %= escape_javascript(truncate(data)) % >;
           // Replace text of body-id div
-          $("#body-" + id).text(data.substring(0, 25)+"...");
+          $("#body-" + id).text(data.substring(0, 27)+"...");
         });
       });
   });
